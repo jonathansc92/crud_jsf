@@ -1,0 +1,111 @@
+<!-- ========== Left Sidebar Start ========== -->
+<div class="left side-menu">
+    <div class="sidebar-inner slimscrollleft">
+
+        <!--- Sidemenu -->
+        <div id="sidebar-menu">
+            <ul>
+                <li class="text-muted menu-title"></li>
+
+                <li class="has_sub">
+                    <a href="{{route('home')}}" class="waves-effect"><span class="label label-pill label-primary float-right">1</span><i class="zmdi zmdi-view-dashboard"></i><span> Geral </span> </a>
+                </li>
+
+                <li class="has_sub">
+                    <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-format-underlined"></i> <span> Estoque </span> <span class="menu-arrow"></span></a>
+                    <ul class="list-unstyled">
+                        <li>{{ Html::linkAction('ProdutosController@index', ' Produtos', null, array('class' => '')) }}</li>
+                        <li>{{ Html::linkAction('CategoriasController@index', ' Categorias', null, array('class' => '')) }}</li>
+
+
+                    </ul>
+                </li>
+
+                <li  class="has_sub">
+                    <a href="{{route('cliente')}}" class="waves-effect"><i class="zmdi zmdi-calendar"></i><span> Clientes </span> </a>
+                </li>
+            
+                <li  class="has_sub">
+                    <a href="{{route('fornecedor')}}" class="waves-effect"><i class="zmdi zmdi-calendar"></i><span> Fornecedores </span> </a>
+                </li>
+
+                <!--<a href="calendar.html" class="waves-effect"><i class="zmdi zmdi-calendar"></i><span> Clientes </span> </a>-->
+
+                <li class="has_sub">
+                    <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-album"></i> <span> Compras </span> <span class="menu-arrow"></span></a>
+                    <ul class="list-unstyled">
+                        <li><a href="components-grid.html">Grid</a></li>
+                        <li><a href="components-range-sliders.html">Range sliders</a></li>
+                        <li><a href="components-sweet-alert.html">Sweet Alerts</a></li>
+                        <li><a href="components-ratings.html">Ratings</a></li>
+                        <li><a href="components-treeview.html">Treeview</a></li>
+                        <li><a href="components-tour.html">Tour</a></li>
+                    </ul>
+                </li>
+
+                <li class="has_sub">
+                    <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-album"></i> <span> Vendas </span> <span class="menu-arrow"></span></a>
+                    <ul class="list-unstyled">
+                        <li><a href="components-grid.html">Grid</a></li>
+                        <li><a href="components-range-sliders.html">Range sliders</a></li>
+                        <li><a href="components-sweet-alert.html">Sweet Alerts</a></li>
+                        <li><a href="components-ratings.html">Ratings</a></li>
+                        <li><a href="components-treeview.html">Treeview</a></li>
+                        <li><a href="components-tour.html">Tour</a></li>
+                    </ul>
+                </li>
+
+                <li class="has_sub">
+                    <a href="{{route('financeiro')}}" class="waves-effect"><i class="zmdi zmdi-calendar"></i><span> Financeiro </span> </a>
+                </li>
+
+
+
+                <li class="text-muted menu-title">More</li>
+
+                <li class="has_sub">
+                    <a href="javascript:void(0);" class="waves-effect"><span class="label label-success label-pill float-right">13</span><i class="zmdi zmdi-collection-item"></i><span> Pages </span></a>
+                    <ul class="list-unstyled">
+                        <li><a href="pages-starter.html">Starter Page</a></li>
+                        <li><a href="pages-login.html">Login</a></li>
+                        <li><a href="pages-register.html">Register</a></li>
+                        <li><a href="pages-recoverpw.html">Recover Password</a></li>
+                        <li><a href="pages-lock-screen.html">Lock Screen</a></li>
+                        <li><a href="pages-404.html">Error 404</a></li>
+                        <li><a href="pages-500.html">Error 500</a></li>
+                        <li><a href="pages-timeline.html">Timeline</a></li>
+                        <li><a href="pages-invoice.html">Invoice</a></li>
+                        <li><a href="pages-pricing.html">Pricing</a></li>
+                        <li><a href="pages-gallery.html">Gallery</a></li>
+                        <li><a href="pages-maintenance.html">Maintenance</a></li>
+                        <li><a href="pages-comingsoon.html">Coming Soon</a></li>
+                    </ul>
+                </li>
+
+                <li class="has_sub">
+                    <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-blur-linear"></i><span>Multi Level </span> <span class="menu-arrow"></span></a>
+                    <ul>
+                        <li class="has_sub">
+                            <a href="javascript:void(0);" class="waves-effect"><span>Menu Level 1.1</span>  <span class="menu-arrow"></span>    </a>
+                            <ul style="">
+                                <li><a href="javascript:void(0);"><span>Menu Item</span></a></li>
+                                <li><a href="javascript:void(0);"><span>Menu Item</span></a></li>
+                                <li><a href="javascript:void(0);"><span>Menu Item</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);"><span>Menu Level 1.2</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+        <!-- Sidebar -->
+        <div class="clearfix"></div>
+
+    </div>
+
+</div>
+<!-- Left Sidebar End -->

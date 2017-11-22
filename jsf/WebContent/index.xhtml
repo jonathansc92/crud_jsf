@@ -10,8 +10,14 @@
 <h:body>
 
 	<h:form>
-		<h:inputText></h:inputText>
-		<h:outputText value="Teste jsf" />
+	
+		<h:outputText value="Produto"/>
+		<h:inputText value="#{produtosBean.produtos.nome}"/>
+		
+		<br/>
+		<h:commandButton value="Salvar" action="#{produtosBean.save}"></h:commandButton>
+		
+
 	</h:form>
 
 </h:body>

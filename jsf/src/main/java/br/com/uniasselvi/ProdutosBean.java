@@ -14,8 +14,17 @@ public class ProdutosBean {
 	private DaoGeneric<Produtos> daoGeneric = new DaoGeneric<Produtos>();
 
 	public String save() {
-		daoGeneric.save(produtos);
-		
+		produtos = daoGeneric.merge(produtos);
+		return "";
+	}
+	
+	public String novo(){
+		produtos = new Produtos();
+		return "";
+	}
+	
+	public String del(){
+		daoGeneric.deleteById(entidade);(produtos);
 		return "";
 	}
 

@@ -10,13 +10,18 @@
 <h:body>
 
 	<h:form>
-	
-		<h:outputText value="Produto"/>
-		<h:inputText value="#{produtosBean.produtos.nome}"/>
-		
-		<br/>
+
+		<h:outputText value="ID" />
+		<h:inputText value="#{produtosBean.produtos.id}" readonly="true" />
+
+		<h:outputText value="Produto" />
+		<h:inputText value="#{produtosBean.produtos.nome}" />
+
+		<br />
+		<h:commandButton value="Novo" action="#{produtosBean.novo}"></h:commandButton>
 		<h:commandButton value="Salvar" action="#{produtosBean.save}"></h:commandButton>
-		
+
+		<h:commandButton value="Deletar" action="#{produtosBean.del}"></h:commandButton>
 
 	</h:form>
 

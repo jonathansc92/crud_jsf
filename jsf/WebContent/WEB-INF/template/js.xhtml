@@ -70,6 +70,41 @@
 		<h:outputScript library="js" name="toastr.min.js" />
 
 		<h:outputScript library="Browser" name="Control.js" />
+		
+		
+		
+		<h:outputScript library="plugins/datatables" name="jquery.dataTables.min.js" />
+		<h:outputScript library="plugins/datatables" name="dataTables.bootstrap4.min.js" />
+			<h:outputScript library="plugins/datatables" name="dataTables.buttons.min.js" />
+				<h:outputScript library="plugins/datatables" name="buttons.bootstrap4.min.js" />
+					<h:outputScript library="plugins/datatables" name="jszip.min.js" />
+						<h:outputScript library="plugins/datatables" name="pdfmake.min.js" />
+							<h:outputScript library="plugins/datatables" name="vfs_fonts.js" />
+								<h:outputScript library="plugins/datatables" name="buttons.html5.min.jss" />
+									<h:outputScript library="plugins/datatables" name="buttons.print.min.jss" />
+										<h:outputScript library="plugins/datatables" name="buttons.colVis.min.js" />
+
+
+<script type="text/javascript">
+$(function () {
+    var table = $('#produtos').DataTable({
+        select: true,
+        "lengthChange": false,
+        "language": {
+            "sZeroRecords": "Nenhum registro encontrado",
+            "sInfo": "Mostrando _START_ / _END_ de _TOTAL_ registro(s)",
+            "sInfoFiltered": "(filtrado de _MAX_ registros)",
+            "sSearch": "Pesquisar: ",
+            "paginate": {
+                "previous": "Anterior",
+                "next": "Proximo"
+            }
+        }
+    });
+
+
+});
+</script>
 
 	</ui:composition>
 </body>

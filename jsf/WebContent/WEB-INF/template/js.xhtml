@@ -7,104 +7,14 @@
 <body>
 	<ui:composition>
 
-		<script>
-			var resizefunc = [];
-		</script>
-
-		<h:outputScript library="js" name="tether.min.js" />
-		<h:outputScript library="js" name="bootstrap.min.js" />
-		<h:outputScript library="js" name="detect.js" />
-		<h:outputScript library="js" name="fastclick.js" />
-		<h:outputScript library="js" name="jquery.blockUI.js" />
-		<h:outputScript library="js" name="waves.js" />
-		<h:outputScript library="js" name="jquery.nicescroll.js" />
-		<h:outputScript library="js" name="jquery.scrollTo.min.js" />
-		<h:outputScript library="js" name="jquery.slimscroll.js" />
-		<h:outputScript library="plugins/switchery" name="switchery.min.js" />
-
-
-		<h:outputScript library="plugins/custombox/js" name="custombox.min.js" />
-		<h:outputScript library="plugins/custombox/js" name="legacy.min.js" />
-
-
-
-		<h:outputScript library="js" name="plugins/morris/morris.min.js " />
-		<h:outputScript library="plugins/raphael" name="raphael-min.js" />
-
-		<h:outputScript library="plugins/waypoints/lib"
-			name="jquery.waypoints.js" />
-		<h:outputScript library="plugins/counterup"
-			name="jquery.counterup.min.js" />
-
-		<h:outputScript library="js" name="jquery.core.js" />
-		<h:outputScript library="js" name="jquery.app.js" />
-
-		<h:outputScript library="pages" name="jquery.dashboard.js" />
-
-
-
-		<h:outputScript library="plugins/parsleyjs" name="parsley.min.js" />
-
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$("#form").parsley();
-			});
-		</script>
-
-		<h:outputScript library="plugins/moment" name="moment.js" />
-		<h:outputScript library="plugins/timepicker"
-			name="bootstrap-timepicker.min.js" />
-		<h:outputScript library="plugins/mjolnic-bootstrap-colorpicker/js"
-			name="bootstrap-colorpicker.min.js" />
-		<h:outputScript library="plugins/bootstrap-daterangepicker"
-			name="daterangepicker.js" />
-		<h:outputScript library="plugins/clockpicker"
-			name="bootstrap-clockpicker.js" />
-		<h:outputScript library="plugins/bootstrap-daterangepicker"
-			name="daterangepicker.js" />
-
-		<h:outputScript library="pages" name="jquery.form-pickers.init.js" />
-
-
-		<h:outputScript library="js" name="modal.js" />
-		<h:outputScript library="js" name="toastr.min.js" />
-
-		<h:outputScript library="Browser" name="Control.js" />
+		<h:outputScript library="vendor/jquery" name="jquery.min.js" />
+		<h:outputScript library="vendor/bootstrap/js" name="bootstrap.min.js" />
+		<h:outputScript library="vendor/metisMenu" name="metisMenu.min.js" />
+		<h:outputScript library="vendor/raphael" name="raphael.min.js" />
+		<h:outputScript library="vendor/morrisjs" name="morris.min.js" />
+		<h:outputScript library="data" name="morris-data.js" />
+		<h:outputScript library="dist/js" name="sb-admin-2.js" />
 		
-		
-		
-		<h:outputScript library="plugins/datatables" name="jquery.dataTables.min.js" />
-		<h:outputScript library="plugins/datatables" name="dataTables.bootstrap4.min.js" />
-			<h:outputScript library="plugins/datatables" name="dataTables.buttons.min.js" />
-				<h:outputScript library="plugins/datatables" name="buttons.bootstrap4.min.js" />
-					<h:outputScript library="plugins/datatables" name="jszip.min.js" />
-						<h:outputScript library="plugins/datatables" name="pdfmake.min.js" />
-							<h:outputScript library="plugins/datatables" name="vfs_fonts.js" />
-								<h:outputScript library="plugins/datatables" name="buttons.html5.min.jss" />
-									<h:outputScript library="plugins/datatables" name="buttons.print.min.jss" />
-										<h:outputScript library="plugins/datatables" name="buttons.colVis.min.js" />
-
-
-<script type="text/javascript">
-$(function () {
-    var table = $('#produtos').DataTable({
-        select: true,
-        "lengthChange": false,
-        "language": {
-            "sZeroRecords": "Nenhum registro encontrado",
-            "sInfo": "Mostrando _START_ / _END_ de _TOTAL_ registro(s)",
-            "sInfoFiltered": "(filtrado de _MAX_ registros)",
-            "sSearch": "Pesquisar: ",
-            "paginate": {
-                "previous": "Anterior",
-                "next": "Proximo"
-            }
-        }
-    });
-
-
-});
-</script>
 
 	</ui:composition>
 </body>

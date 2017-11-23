@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:h="http://java.sun.com/jsf/html">
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
 
 <h:head>
 	<title>Pagina teste JSF</title>
@@ -9,7 +10,7 @@
 
 <h:body>
 
-	<h:form>
+	<h:form id="form">
 
 		<h:outputText value="ID" />
 		<h:inputText value="#{produtosBean.produtos.id}" readonly="true" />
@@ -18,11 +19,37 @@
 		<h:inputText value="#{produtosBean.produtos.nome}" />
 
 		<br />
-		<h:commandButton value="Novo" action="#{produtosBean.novo}"></h:commandButton>
+		<h:commandButton value="Novo" action="#{produtosBean.add}"></h:commandButton>
 		<h:commandButton value="Salvar" action="#{produtosBean.save}"></h:commandButton>
 
 		<h:commandButton value="Deletar" action="#{produtosBean.del}"></h:commandButton>
 
+
+		<h:dataTable value="#{produtosBean.produtosLst}" var="produtos">
+		
+			<h:column>
+				<h:outputText value="#{produtos.id}" />
+			</h:column>
+
+
+			<h:column>
+				<h:outputText value="#{produtos.nome}" />
+			</h:column>
+			
+			<h:column>
+				<h:commandLink value="Editar">
+					<f:setPropertyActionListener value="#{produtos}" target="#{produtosBean.produtos}" />
+				</h:commandLink>
+			</h:column>
+			
+			<h:column>
+				<h:commandLink value="Deletar" action="#{produtosBean.del}">
+					<f:setPropertyActionListener value="#{produtos}" target="#{produtosBean.produtos}" />
+				</h:commandLink>
+			</h:column>
+			
+
+		</h:dataTable>
 	</h:form>
 
 </h:body>
